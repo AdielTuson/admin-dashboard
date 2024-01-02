@@ -63,14 +63,15 @@ button, input,
     font-size: 0.75rem;
     border: none;
     outline: none;
+    border: 1px solid var(--last-color);
 }
 
 #search:focus {
-    outline: 2px solid blue;
+    outline: 1px solid var(--main-color);
 }
 
 .notification-icon, #search-icon {
-    width: 25px;
+    width: 30px;
     display: flex;
 }
 
@@ -125,9 +126,13 @@ button, input,
     background-color: var(--last-color);
     color: white;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
-
+.header-buttons button:hover{
+    transform: scale(1.07);
+    transition: all 0.2s;
+}
 
 /* Sidebar */
 .sidebar {
