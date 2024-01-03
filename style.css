@@ -12,10 +12,11 @@ html {
     font-family:'Ubuntu', 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: black;
-    --main-color: #222831;
-    --secondary-color: #393E46;
-    --last-color: #00ADB5;
-    --special-color:#EEEEEE;
+    --background-color: #222831;
+    --cards-color: rgb(69, 83, 104);
+    --sidebar-color: #393E46;
+    --special-color: #00ADB5;
+    --header-color:#EEEEEE;
 }
 
 body{
@@ -23,7 +24,7 @@ body{
     min-height: 100vh;
     display: grid;
     grid-template-columns:1fr 4fr;
-    grid-template-rows:1fr 5fr;
+    grid-template-rows:200px 1fr;
 }
 
 button,
@@ -50,7 +51,7 @@ button,
     grid-template-columns: auto 1fr auto auto auto;
     grid-template-rows: auto auto;
     align-items: center;
-    background-color: var(--special-color);
+    background-color: var(--header-color);
     gap: 30px;
 }
 
@@ -63,12 +64,12 @@ button,
     font-size: 0.75rem;
     border: none;
     outline: none;
-    border: 1px solid var(--last-color);
+    border: 1px solid var(--special-color);
 }
 
 #search:focus {
-    outline: 1px solid var(--main-color);
-    box-shadow: 0 0 5px var(--secondary-color);
+    outline: 1px solid var(--background-color);
+    box-shadow: 0 0 5px var(--sidebar-color);
 }
 
 .notification-icon, #search-icon {
@@ -124,7 +125,7 @@ button,
     padding: 10px;
     border-radius: 20px;
     border: none;
-    background-color: var(--last-color);
+    background-color: var(--special-color);
     color: white;
     cursor: pointer;
     transition: all 0.2s;
@@ -139,7 +140,7 @@ button,
 .sidebar {
     color: white;
     padding: 20px 0;
-    background-color: var(--secondary-color);
+    background-color: var(--sidebar-color);
     grid-row: 1/3;
     display: grid;
     grid-template-rows: auto 1fr;
@@ -174,7 +175,7 @@ button,
 }
 
 .nav-item:hover {
-    border-left: 5px solid var(--special-color);
+    border-left: 5px solid var(--header-color);
     background-color: #00acb53c;
     cursor: pointer;
 }
@@ -191,8 +192,8 @@ button,
 
 /* Main */
 .main-content{
-    background-color: var(--main-color);
-    color: var(--special-color);
+    background-color: var(--background-color);
+    color: var(--header-color);
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr auto 1fr;
@@ -209,15 +210,15 @@ button,
     font-size: 0.75rem;
     /* max-height: 550px; */
     padding: 15px;
-    background-color:#797d83;
+    background-color:var(--cards-color);
     border-radius: 15px;
     box-shadow: 0 0 2px rgb(0, 0, 0);
     cursor: pointer;
 }
 
 .card:hover{
-    /* outline: 4px solid var(--last-color); */
-    box-shadow: 0 0 15px var(--last-color);
+    /* outline: 4px solid var(--special-color); */
+    box-shadow: 0 0 15px var(--special-color);
 }
 
 .projects-section {
@@ -232,7 +233,7 @@ button,
 .project-card{
     width: auto;
     max-width: 530px;
-    border-left:5px solid var(--special-color) ;
+    border-left:5px solid var(--header-color) ;
 }
 
 .announcements-header{
