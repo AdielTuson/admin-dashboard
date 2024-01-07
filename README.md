@@ -17,3 +17,6 @@ mainly grid.
 
 - Icon by <a class="link_pro" href="https://freeicons.io/undefined/house-home-user-interface-icon-45978">ColourCreatype</a>
                 on <a href="https://freeicons.io">freeicons.io</a>
+
+- Icon by <a class="link_pro" href="https://freeicons.io/colorful-flat-web-icons-set/dog-pet-animal-dog-icon-flat-icon-icon-52562">Reda</a>
+                on <a href="https://freeicons.io">freeicons.io</a>              
